@@ -1,8 +1,0 @@
-package com.lcwd.user.service.UserService.Test;
-
-import org.springframework.boot.test.context.SpringBootTest;
-
-@SpringBootTest(classes = {UserServiceTests.class})
-public class UserServiceTests {
-
-}
