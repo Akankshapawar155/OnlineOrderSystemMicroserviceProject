@@ -1,0 +1,5 @@
+package com.lcwd.gateway.security;
+
+public class MySecurityConfig {
+
+}

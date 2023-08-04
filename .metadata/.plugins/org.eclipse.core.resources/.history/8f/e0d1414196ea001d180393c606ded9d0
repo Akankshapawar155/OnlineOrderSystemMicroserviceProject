@@ -1,0 +1,30 @@
+package com.lcwd.order;
+
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+
+@SpringBootTest(classes = { OrderServiceApplicationTests.class })
+class OrderServiceApplicationTests {
+
+	@Test
+	@Order(1)
+	public void test_createOrder() {
+	}
+
+	@Test
+	@Order(1)
+	public void test_getallOrder() {
+	}
+
+	@Test
+	@Order(1)
+	public void test_getOrderByUser() {
+	}
+
+	@Test
+	@Order(1)
+	public void test_getOrderByHotelId() {
+	}
+}

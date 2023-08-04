@@ -1,0 +1,21 @@
+package com.lcwd.rating;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.lcwd.rating.repositories.RatingRepository;
+import com.lcwd.rating.service.impl.RatingServiceImpl;
+
+
+@SpringBootTest(classes = { RatingServiceApplicationTests.class })
+class RatingServiceApplicationTests {
+	
+	@Mock
+	RatingRepository ratingRepo;
+	
+	@InjectMocks
+	RatingServiceImpl ratingService;
+	
+}

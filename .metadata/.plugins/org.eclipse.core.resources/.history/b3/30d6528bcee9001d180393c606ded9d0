@@ -1,0 +1,37 @@
+package com.lcwd.user.service.UserService.Test;
+
+import static org.mockito.Mockito.when;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.lcwd.user.service.UserService.entities.User;
+import com.lcwd.user.service.UserService.repositories.UserRepository;
+import com.lcwd.user.service.UserService.services.impl.UserServiceImpl;
+
+@SpringBootTest(classes = {UserServiceTests.class})
+public class UserServiceTests {
+	
+	@Mock
+	UserRepository userRepo;
+	
+	@InjectMocks
+	UserServiceImpl userService;
+	
+	
+	public void test_addUser() {
+		
+		
+	}
+	
+	public void test_getAllUsers() {
+		List<User> users = new ArrayList<>();
+		when(userRepo.findAll()).then(users);
+		userService.getAllUser();
+	}
+
+}

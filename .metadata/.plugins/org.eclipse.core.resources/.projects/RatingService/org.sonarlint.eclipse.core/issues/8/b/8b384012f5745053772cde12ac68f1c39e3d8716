@@ -1,0 +1,65 @@
+
+Q
+java:S2116*"%Use "Arrays.toString(array)" instead.(›ÒÀŞ8˜è…çş0HíARMAJORZBUG
+…
+java:S1192!"ODefine a constant instead of duplicating this literal "Inside  method" 4 times.(›ÒÀŞ8µ€†çş0HıARCRITICALZ
+CODE_SMELL
+t
+java:S1858!"A"getName" returns a string, there's no need to call "toString()".(›ÒÀŞ8‹…çş0HâARMINORZ
+CODE_SMELL
+r
+java:S4684 "@Replace this persistent entity with a simple POJO or DTO object.(ó¯ËØH†?RCRITICALZVULNERABILITY
+P
+java:S3751)"Make this method non "private".(¿¤œ™ÿÿÿÿÿHˆ?RMAJORZ
+CODE_SMELL
+t
+java:S3457*"AFormat specifiers should be used instead of string concatenation.(›ÒÀŞ8‹ÚÚæş0HèARMAJORZ
+CODE_SMELL
+t
+java:S18581"A"getName" returns a string, there's no need to call "toString()".(›ÒÀŞ8µ€†çş0H‰BRMINORZ
+CODE_SMELL
+t
+java:S34578"AFormat specifiers should be used instead of string concatenation.(›ÒÀŞ8‹ÚÚæş0H—BRMAJORZ
+CODE_SMELL
+
+java:S2629!"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(›ÒÀŞ8‹…çş0HŞARMAJORZ
+CODE_SMELL
+
+java:S2629*"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(›ÒÀŞ8˜è…çş0HìARMAJORZ
+CODE_SMELL
+t
+java:S1858*"A"getName" returns a string, there's no need to call "toString()".(›ÒÀŞ8˜è…çş0HğARMINORZ
+CODE_SMELL
+t
+java:S34571"AFormat specifiers should be used instead of string concatenation.(›ÒÀŞ8‹ÚÚæş0HûARMAJORZ
+CODE_SMELL
+Q
+java:S2116!"%Use "Arrays.toString(array)" instead.(›ÒÀŞ8‹…çş0HßARMAJORZBUG
+K
+java:S3751 "Make this method non "private".(ó¯ËØH‡?RMAJORZ
+CODE_SMELL
+t
+java:S3457!"AFormat specifiers should be used instead of string concatenation.(›ÒÀŞ8‹ÚÚæş0H¯?RMAJORZ
+CODE_SMELL
+P
+java:S37510"Make this method non "private".(õ†ãüÿÿÿÿH‰?RMAJORZ
+CODE_SMELL
+Q
+java:S21161"%Use "Arrays.toString(array)" instead.(›ÒÀŞ8µ€†çş0H†BRMAJORZBUG
+
+java:S26291"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(›ÒÀŞ8µ€†çş0H…BRMAJORZ
+CODE_SMELL
+P
+java:S37517"Make this method non "private".(ÔŠìèûÿÿÿÿHŠ?RMAJORZ
+CODE_SMELL
+
+java:S1192!"KDefine a constant instead of duplicating this literal " of class " 4 times.(›ÒÀŞ8µ€†çş0HBRCRITICALZ
+CODE_SMELL
+
+java:S26298"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(›ÒÀŞ8Êš†çş0H¡BRMAJORZ
+CODE_SMELL
+Q
+java:S21168"%Use "Arrays.toString(array)" instead.(›ÒÀŞ8Êš†çş0H¢BRMAJORZBUG
+t
+java:S18588"A"getName" returns a string, there's no need to call "toString()".(›ÒÀŞ8Êš†çş0H¥BRMINORZ
+CODE_SMELL

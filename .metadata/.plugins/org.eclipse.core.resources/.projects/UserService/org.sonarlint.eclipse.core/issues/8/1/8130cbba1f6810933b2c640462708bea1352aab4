@@ -1,0 +1,9 @@
+
+V
+java:S1128"*Remove this unused import 'lombok.Setter'.(ó¸çµHÎ*RMINORZ
+CODE_SMELL
+V
+java:S1128"*Remove this unused import 'lombok.Getter'.(ùÒµÙHÌ*RMINORZ
+CODE_SMELL
+…	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(îž·ËHË*RMINORZ
+CODE_SMELL

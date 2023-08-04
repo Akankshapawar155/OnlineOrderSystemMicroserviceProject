@@ -1,0 +1,35 @@
+package com.lcwd.foodmenu;
+
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.lcwd.foodmenu.repositories.FoodMenuRepositories;
+import com.lcwd.foodmenu.services.impl.FoodMenuServiceImpl;
+
+@SpringBootTest(classes = { FoodMenuServiceApplicationTests.class })
+class FoodMenuServiceApplicationTests {
+
+	@Mock
+	FoodMenuRepositories repo;
+
+	@InjectMocks
+	FoodMenuServiceImpl service;
+
+	@Test
+	@Order(1)
+	public void test_createFood() {
+	};
+
+	@Test
+	@Order(1)
+	public void test_getAllFood() {
+	};
+
+	@Test
+	@Order(1)
+	public void test_getFoodByHotelId() {
+	};
+}

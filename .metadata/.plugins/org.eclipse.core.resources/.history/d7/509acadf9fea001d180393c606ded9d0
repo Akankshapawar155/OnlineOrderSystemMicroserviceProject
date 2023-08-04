@@ -1,0 +1,15 @@
+package com.lcwd.foodmenu;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.lcwd.hotel.HotelServiceApplicationTests;
+
+@SpringBootTest(classes = { FoodMenuServiceApplicationTests.class })
+class FoodMenuServiceApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}

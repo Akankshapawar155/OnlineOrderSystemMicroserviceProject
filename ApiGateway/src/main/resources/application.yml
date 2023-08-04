@@ -1,0 +1,43 @@
+server:
+  port: 8090
+  
+spring:
+  application:
+    name: API-GATEWAY
+    
+  cloud:
+    gateway:
+      routes:
+      - id: USER-SERVICE
+        uri: http://localhost:8081
+        predicates:
+        - Paths=/users/**
+       
+      - id: RATING-SERVICE
+        uri: http://localhost:8083
+        predicates:
+        - Paths=/ratings/**
+        
+      - id: FOODMENU-SERVICE
+        uri: http://localhost:8084
+        predicates:
+        - Paths=/foods/**
+      
+      - id: HOTEL-SERVICE
+        uri: http://localhost:8082
+        predicates:
+        - Paths=/hotels/**
+        
+      - id: ORDER-SERVICE
+        uri: http://localhost:8085
+        predicates:
+        - Paths=/orders/**
+        
+eureka:
+  instance:
+    ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone : http://localhost:8761/eureka

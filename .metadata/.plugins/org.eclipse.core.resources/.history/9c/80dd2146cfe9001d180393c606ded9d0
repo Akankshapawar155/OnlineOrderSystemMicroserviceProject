@@ -1,0 +1,48 @@
+package com.lcwd.user.service.UserService.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.when;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.assertj.core.util.Arrays;
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.lcwd.user.service.UserService.entities.Order;
+import com.lcwd.user.service.UserService.entities.Ratings;
+import com.lcwd.user.service.UserService.entities.User;
+import com.lcwd.user.service.UserService.repositories.UserRepository;
+import com.lcwd.user.service.UserService.services.impl.UserServiceImpl;
+
+@SpringBootTest(classes = {UserServiceTests.class})
+public class UserServiceTests {
+	
+	@Mock
+	UserRepository userRepo;
+	
+	@InjectMocks
+	UserServiceImpl userService;
+	
+	
+	public void test_addUser() {
+		
+		
+	}
+	@Test
+	@org.junit.jupiter.api.Order("2")
+	public void test_getAllUsers() {
+		List<User> users = new ArrayList<>();
+		//List<Order> orders = Arrays.asList(users)
+		//List<Ratings> ratings;
+		users.add(new User("1","akanksha", "akanksha@gmail.com", "devloper",new ArrayList<Ratings>(), new ArrayList<Order>()));
+		users.add(new User("2","jayraj", "jayraj@gmail.com", "devloper",new ArrayList<Ratings>(), new ArrayList<Order>()));
+		when(userRepo.findAll()).thenReturn(users);
+		assertEquals(2, userService.getAllUser().size());
+		;
+	}
+
+}

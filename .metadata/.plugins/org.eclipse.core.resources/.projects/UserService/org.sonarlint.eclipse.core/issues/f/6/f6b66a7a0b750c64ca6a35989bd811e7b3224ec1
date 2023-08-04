@@ -1,0 +1,12 @@
+
+Š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(†Ò«¬üÿÿÿÿHÚ;RMINORZ
+CODE_SMELL
+|
+java:S1874"DRemove this use of "WebSecurityConfigurerAdapter"; it is deprecated.(éÂåèýÿÿÿÿ8ãÁ‡Ñþ0H†<RMINORZ
+CODE_SMELL
+n
+java:S6437"6Revoke and change this password, as it is compromised.(ä£®8ãÁ‡Ñþ0H‡<RBLOCKERZVULNERABILITY
+n
+java:S6437"6Revoke and change this password, as it is compromised.(÷ÍÂû8ãÁ‡Ñþ0Hˆ<RBLOCKERZVULNERABILITY
+n	java:S125$"<This block of commented-out lines of code should be removed.(ßÓ˜‡8ãÁ‡Ñþ0H‰<RMAJORZ
+CODE_SMELL

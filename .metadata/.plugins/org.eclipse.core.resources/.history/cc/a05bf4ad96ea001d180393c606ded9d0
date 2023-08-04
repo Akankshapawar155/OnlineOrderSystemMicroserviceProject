@@ -1,0 +1,46 @@
+package com.lcwd.order;
+
+import static org.mockito.Mockito.when;
+
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.lcwd.order.repositories.OrderRepository;
+import com.lcwd.order.services.impl.OrderServiceImpl;
+
+
+@SpringBootTest(classes = { OrderServiceApplicationTests.class })
+class OrderServiceApplicationTests {
+	
+	@Mock
+	OrderRepository repo;
+	
+	@InjectMocks
+	OrderServiceImpl orderService;
+
+	@Test
+	@Order(1)
+	public void test_createOrder() {
+		
+		com.lcwd.order.entities.Order order = new com.lcwd.order.entities.Order("1", "2", "3", "4");
+		when(null)
+	}
+
+	@Test
+	@Order(2)
+	public void test_getallOrder() {
+	}
+
+	@Test
+	@Order(3)
+	public void test_getOrderByUser() {
+	}
+
+	@Test
+	@Order(4)
+	public void test_getOrderByHotelId() {
+	}
+}
